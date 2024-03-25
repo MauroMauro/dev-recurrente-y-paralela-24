@@ -29,7 +29,7 @@ public class LeerArchivoDeProductoRepositorio implements Funcionalidades {
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 		
 		return sListProducto;
