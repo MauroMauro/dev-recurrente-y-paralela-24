@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class main {
-	public static final String SEPARATOR=";";
-	public static final String QUOTE="\"";
 
 	public static void main(String[] args) throws IOException {
 		
@@ -17,7 +15,7 @@ public class main {
 			br= new BufferedReader(new FileReader("src/ej1LeerArchivoCSV/vial.csv"));
 			String line = br.readLine();
 			while (null!=line) {
-				String [] fields = line.split(SEPARATOR);
+				String [] fields = line.split(",");
 				System.out.println(Arrays.toString(fields));
 				
 				//fields = removeTrailingQuotes(fields);
