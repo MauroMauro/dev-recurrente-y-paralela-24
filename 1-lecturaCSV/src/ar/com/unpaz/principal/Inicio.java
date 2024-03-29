@@ -24,19 +24,31 @@ public class Inicio {
 			System.out.println("1- Listar todos los registros");
 			System.out.println("2- Actualizar registro");
 			System.out.println("3- Borrar registro");
-			System.out.println("3- Crear registro");
-			System.out.println("4- Salir");
+			System.out.println("4- Crear registro");
+			System.out.println("9- Salir");
 
 			System.out.println("Escriba una de las opciones");
 			opcion = sn.nextInt();
 			
 			switch(opcion) {
-			case 1:
-				for (Vial vial : lista) {
-					System.out.println(vial.toString());
-				}
-			}
-		}//fin del while
+				case 1:
+					for (Vial vial : lista) {
+						System.out.println(vial.toString());
+					}
+					break;
+					
+				case 9:
+					System.out.println("Se ha salido del programa");
+					salir = true;
+					break;
+					
+				default:
+					 System.out.println("Ingrese un valor válido");
+					 
+			}//fin del switch-case
+			
+			
+		}
 		
 		
 
