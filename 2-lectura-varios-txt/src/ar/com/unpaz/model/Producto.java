@@ -32,6 +32,9 @@ public class Producto {
 		this.precio = precio;
 	}
 	
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Producto [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio + "]";
