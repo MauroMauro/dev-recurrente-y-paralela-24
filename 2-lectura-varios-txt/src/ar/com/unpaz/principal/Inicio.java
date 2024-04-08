@@ -19,12 +19,14 @@ public class Inicio {
 		List<Producto> lista = new ArrayList<Producto>();
 		lista = servicio.getListProductos();
 		
+		
 		while (!salir) {
 			System.out.println("=======  Lectura Varios TXT   =======");
 			System.out.println("1- Listar todos los productos");
 			System.out.println("2- Listar todos los clientes");
 			System.out.println("3- Listar todos los detalles");
 			System.out.println("4- Listar todos las ventas");
+			System.out.println("5- Listar completo");
 			System.out.println("9- Salir");
 
 			System.out.println("Escriba una de las opciones");

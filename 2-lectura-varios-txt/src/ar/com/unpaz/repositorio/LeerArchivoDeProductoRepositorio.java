@@ -12,7 +12,8 @@ import ar.com.unpaz.model.Producto;
 
 public class LeerArchivoDeProductoRepositorio implements Funcionalidades{
 	public List<Producto> getListProductos(){
-		File sFile = new File("archivo/Producto.txt");
+		File sFile = new File("C:\\Users\\AULA-211-0\\Desktop\\prog-recu-paral-24\\2-lectura-varios-txt\\archivos\\Producto.txt");
+//		File sFile = new File("/archivos/Producto.txt");
 		List<Producto> sListProducto = new ArrayList<Producto>();
 		FileReader sFileReader;
 		try {
