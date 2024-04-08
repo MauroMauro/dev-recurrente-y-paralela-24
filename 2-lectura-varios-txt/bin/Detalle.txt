@@ -1,0 +1,1 @@
+id,venta,producto,cantidad,precio
