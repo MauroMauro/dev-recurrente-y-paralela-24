@@ -1,0 +1,4 @@
+1 leer cliente
+2 leer venta
+3 leer detalle
+4 leer completo

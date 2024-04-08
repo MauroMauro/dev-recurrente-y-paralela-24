@@ -1,0 +1,3 @@
+id,nombre,cantidad,precio
+
+1,mouse,4,20
