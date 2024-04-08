@@ -14,6 +14,7 @@ public class Inicio {
 	public static void main(String[] args) {
 		LeerArchivoProductoArchivo servicio = new LeerArchivoProductoArchivo();
 		LeerArchivoClienteServicio servicioCliente = new LeerArchivoClienteServicio();
+		LeerArchivoVentaServicio servicioVenta = new LeerArchivoVentaServicio();
 		
 		Scanner sn = new Scanner(System.in);
 		boolean salir = false;
