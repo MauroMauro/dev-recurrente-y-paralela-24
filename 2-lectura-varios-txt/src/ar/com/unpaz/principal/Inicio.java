@@ -5,8 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import DTO.InformeDTO;
 import ar.com.unpaz.model.Cliente;
 import ar.com.unpaz.model.Detalle;
+import ar.com.unpaz.model.Informe;
 import ar.com.unpaz.model.Producto;
 import ar.com.unpaz.model.Venta;
 import ar.com.unpaz.servicio.LeerArchivoProductoArchivo;
@@ -68,6 +70,12 @@ public class Inicio {
 			case 4:
 				for (Venta venta: listaVenta) {
 					System.out.println(venta.toString());
+				}
+				break;
+			case 5:
+				InformeDTO informeDTO = new InformeDTO();
+				for (Informe informe: informeDTO.generarListaInformes()) {
+					System.out.println(informe.toString());
 				}
 				break;
 				

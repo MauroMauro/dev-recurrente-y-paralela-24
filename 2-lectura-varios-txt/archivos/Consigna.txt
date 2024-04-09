@@ -2,3 +2,7 @@
 2 leer venta
 3 leer detalle
 4 leer completo
+	- crear clase informe (dto)
+		nombre de cliente
+		cantidad de ventas
+		total de ventas
