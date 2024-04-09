@@ -7,6 +7,7 @@ public class Detalle {
 	private String idProducto;
 	private int cantidad;
 	private int precio;
+	
 	public String getId() {
 		return id;
 	}

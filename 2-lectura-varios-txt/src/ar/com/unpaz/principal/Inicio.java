@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Scanner;
 
 import ar.com.unpaz.model.Cliente;
+import ar.com.unpaz.model.Detalle;
 import ar.com.unpaz.model.Producto;
+import ar.com.unpaz.model.Venta;
 import ar.com.unpaz.servicio.LeerArchivoProductoArchivo;
 import ar.com.unpaz.servicio.*;
 
@@ -15,6 +17,7 @@ public class Inicio {
 		LeerArchivoProductoArchivo servicio = new LeerArchivoProductoArchivo();
 		LeerArchivoClienteServicio servicioCliente = new LeerArchivoClienteServicio();
 		LeerArchivoVentaServicio servicioVenta = new LeerArchivoVentaServicio();
+		LeerArchivoDetalleServicio servicioDetalle = new LeerArchivoDetalleServicio();
 		
 		Scanner sn = new Scanner(System.in);
 		boolean salir = false;
@@ -26,6 +29,11 @@ public class Inicio {
 		List<Cliente> listaCliente = new ArrayList<Cliente>();
 		listaCliente = servicioCliente.getListClientes();
 		
+		List<Venta> listaVenta = new ArrayList<Venta>();
+		listaVenta = servicioVenta.getListVentas();
+		
+		List<Detalle> listaDetalle = new ArrayList<Detalle>();
+		listaDetalle = servicioDetalle.getListDetalles();
 		
 		while (!salir) {
 			System.out.println("=======  Lectura Varios TXT   =======");
@@ -48,6 +56,18 @@ public class Inicio {
 			case 2:
 				for (Cliente cliente : listaCliente) {
 					System.out.println(cliente.toString());
+				}
+				break;
+			
+			case 3:
+				for (Detalle detalle : listaDetalle) {
+					System.out.println(detalle.toString());
+				}
+				break;
+			
+			case 4:
+				for (Venta venta: listaVenta) {
+					System.out.println(venta.toString());
 				}
 				break;
 				

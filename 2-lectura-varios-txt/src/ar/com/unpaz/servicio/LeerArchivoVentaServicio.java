@@ -7,7 +7,7 @@ import ar.com.unpaz.model.Venta;
 import ar.com.unpaz.repositorio.LeerArchivoDeVentaRepositorio;
 
 public class LeerArchivoVentaServicio {
-	public List<Venta> getListProductos(){
+	public List<Venta> getListVentas(){
 		LeerArchivoDeVentaRepositorio repo = new LeerArchivoDeVentaRepositorio();
 		List<Venta> sList = new ArrayList<Venta>();
 		sList = repo.getListVenta();

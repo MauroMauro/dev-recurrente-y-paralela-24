@@ -7,14 +7,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import ar.com.unpaz.crud.FuncionalidadesCliente;
-import ar.com.unpaz.model.Cliente;
+import ar.com.unpaz.crud.FuncionalidadesDetalle;
+import ar.com.unpaz.model.Detalle;
 
-public class LeerArchivoDeClienteRepositorio implements FuncionalidadesCliente{
-	public List<Cliente> getListClientes(){
+
+
+public class LeerArchivoDeDetalleRepositorio implements FuncionalidadesDetalle{
+	public List<Detalle> getListDetalle(){
 		//File sFile = new File("C:\\Users\\AULA-211-0\\Desktop\\prog-recu-paral-24\\2-lectura-varios-txt\\archivos\\Cliente.txt");
-		File sFile = new File("archivos/Cliente.txt");
-		List<Cliente> sListCliente = new ArrayList<Cliente>();
+		File sFile = new File("archivos/Detalle.txt");
+		List<Detalle> sListDetalle = new ArrayList<Detalle>();
 		FileReader sFileReader;
 		try {
 			sFileReader = new FileReader(sFile);
@@ -22,23 +24,20 @@ public class LeerArchivoDeClienteRepositorio implements FuncionalidadesCliente{
 			String linea = "";
 			while((linea = sBufferReader.readLine()) != null) {
 				String data [] = linea.split(",");
-				Cliente sCliente =new Cliente();
-				sCliente.setId(data[0]);
-				sCliente.setNombre(data[1]);
-				sCliente.setApellido(data[2]);
-				sCliente.setTelefono(data[3]);
-				sListCliente.add(sCliente);
+				Detalle sDetalle =new Detalle();
+				sDetalle.setId(data[0]);
+				sDetalle.setIdVenta(data[1]);
+				sDetalle.setIdProducto(data[2]);
+				sDetalle.setCantidad(Integer.parseInt(data[3]));
+				sDetalle.setPrecio(Integer.parseInt(data[4]));
+				sListDetalle.add(sDetalle);
 			}
 		}catch (IOException e){
 			e.printStackTrace();
 		}
-		return sListCliente;
+		return sListDetalle;
 	}
 
-	@Override
-	public List<Cliente> getListCliente() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }
 

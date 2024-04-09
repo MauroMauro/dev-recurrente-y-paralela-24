@@ -12,8 +12,8 @@ import ar.com.unpaz.model.Venta;
 
 public class LeerArchivoDeVentaRepositorio implements FuncionalidadesVenta{
 	public List<Venta> getListVenta(){
-		File sFile = new File("C:\\Users\\AULA-211-0\\Desktop\\prog-recu-paral-24\\2-lectura-varios-txt\\archivos\\Venta.txt");
-//		File sFile = new File("/archivos/Venta.txt");
+		//File sFile = new File("C:\\Users\\AULA-211-0\\Desktop\\prog-recu-paral-24\\2-lectura-varios-txt\\archivos\\Venta.txt");
+		File sFile = new File("archivos/Venta.txt");
 		List<Venta> sListVenta = new ArrayList<Venta>();
 		FileReader sFileReader;
 		try {
