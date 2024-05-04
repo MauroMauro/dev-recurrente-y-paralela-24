@@ -20,6 +20,12 @@ Uso de threads.
 
 ---
 
+## Proyecto 4
+Aplicación Java.
+Sincronización de threads.
+
+---
+
 ### Tecnologías utilizadas 🔧
 
 _Eclipse IDE_
