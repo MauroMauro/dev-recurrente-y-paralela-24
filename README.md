@@ -14,6 +14,12 @@ Lectura de múltiples archivos.
 
 ---
 
+## Proyecto 3
+Aplicación Java.
+Uso de threads.
+
+---
+
 ### Tecnologías utilizadas 🔧
 
 _Eclipse IDE_
