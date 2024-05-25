@@ -26,6 +26,12 @@ Sincronización de threads.
 
 ---
 
+## Proyecto 5
+Aplicación Java.
+Uso de hilos y lectura de archivos.
+
+---
+
 ### Tecnologías utilizadas 🔧
 
 _Eclipse IDE_
