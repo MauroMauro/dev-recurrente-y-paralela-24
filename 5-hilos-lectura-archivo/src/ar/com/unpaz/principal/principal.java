@@ -8,8 +8,8 @@ public class principal {
 		ProcesoPresentarMensaje hilo2 = new ProcesoPresentarMensaje();
 		
 		hilo1.start(); // se inicializa el hilo, pasa a estado Runnable
+		
 		hilo2.start();
 		
-		//hilo1.stop(); Si se quiere matar al hilo 1
 	}	
 }
