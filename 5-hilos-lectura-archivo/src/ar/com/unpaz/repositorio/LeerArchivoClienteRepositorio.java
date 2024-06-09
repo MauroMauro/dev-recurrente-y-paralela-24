@@ -13,7 +13,7 @@ public class LeerArchivoClienteRepositorio {
 	public List<Cliente> getListClientes(){
 		//File sFile = new File("C:\\Users\\AULA-211-0\\Desktop\\prog-recu-paral-24\\2-lectura-varios-txt\\archivos\\Cliente.txt");
 		File sFile = new File("archivos/Cliente.txt");
-		List<Cliente> sListCliente = new ArrayList<Cliente>();
+		List<Cliente> sListCliente = new ArrayList<Cliente>(); 
 		FileReader sFileReader;
 		try {
 			sFileReader = new FileReader(sFile);
