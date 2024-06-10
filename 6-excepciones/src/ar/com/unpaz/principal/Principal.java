@@ -24,10 +24,7 @@ public class Principal {
 		
 		// EXCEPCIONES NO VERIFICADAS
 		Division division = new Division();
-		division.dividir(0, 1);
-		
-		
-		
+		division.dividir(0, 1);		
 		
 	}
 
