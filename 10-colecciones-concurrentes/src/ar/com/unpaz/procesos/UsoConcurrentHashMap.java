@@ -4,7 +4,24 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class UsoConcurrentHashMap {
 	
-	public void run() {
+	public void run() {		
+		
+		 ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+	        map.put("Matematica", 50);
+	        map.put("Fisica", 60);
+	        map.put("Programacion", 70);
+	        System.out.println( "El mapa es - " + map);
+
+	        System.out.println( "\nLlamando con la clave Matematica");
+	        
+	        Integer newVal = map.compute("Matematica", (key, oldVal) -> { return oldVal + 10; });
+	        System.out.println("\nRetorno==>  " + newVal);
+	        System.out.println( "Mapa==>  - " + map);
+
+	        System.out.println( "\n---------------\n");
+	}
+	
+	public void runParalelo() {
 		ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
 		map.put("A", 1);
 		map.putIfAbsent("B", 2);
@@ -20,8 +37,5 @@ public class UsoConcurrentHashMap {
 		computeIfPresent: Si la clave especificada está presente, intenta recalcular su valor utilizando una función de remapeo.
 		merge: Combina el valor existente con un nuevo valor utilizando una función de combinación.
 		*/
-
-
 	}
-	
 }
