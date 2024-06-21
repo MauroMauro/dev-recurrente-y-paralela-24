@@ -2,6 +2,8 @@ package ar.com.unpaz.principal;
 
 import ar.com.unpaz.procesos.LeerArchivo;
 import ar.com.unpaz.procesos.LeerArchivoThrow;
+import ar.com.unpaz.procesos.MaximoDeListaParalellStreams;
+import ar.com.unpaz.procesos.ParesImparesParallelStreams;
 import ar.com.unpaz.procesos.ProcesoLoop;
 import ar.com.unpaz.procesos.StreamsFilterSubcadena;
 
@@ -13,6 +15,8 @@ public class Principal {
 		LeerArchivo hiloLeerArchivo = new LeerArchivo();
 		LeerArchivoThrow hiloLeerArchivoThrow = new LeerArchivoThrow();
 		StreamsFilterSubcadena hiloStreamsFilterSubcadena = new StreamsFilterSubcadena(); 
+		MaximoDeListaParalellStreams sMaximoDeListaParalellStreams = new MaximoDeListaParalellStreams();
+		ParesImparesParallelStreams sParesImparesParallelStreams = new ParesImparesParallelStreams();
 		
 		
 //		hiloProcesoLoop.start();
@@ -21,8 +25,10 @@ public class Principal {
 //		System.out.println("Se interrumpe el hilo. ¿Interrumpido?: " + hiloLeerArchivo.isInterrupted());
 //		hiloLeerArchivoThrow.start();
 		
-		hiloStreamsFilterSubcadena.start();
+		//hiloStreamsFilterSubcadena.start();
+		//sMaximoDeListaParalellStreams.run();
 		
+		sParesImparesParallelStreams.run();
 
 	}
 

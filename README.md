@@ -25,27 +25,32 @@ Sincronización de threads.
 ---
 
 ## Proyecto 5
-Uso de hilos y lectura de archivos.
+Hilos y lectura de archivos.
 
 ---
 
 ## Proyecto 6
-Variantes para tratamiento de excepciones.
+Tratamiento de excepciones.
 
 ---
 
 ## Proyecto 7
-Ejemplos de uso de streams
+Uso de streams
 
 ---
 
 ## Proyecto 8
-Ejemplo de uso de streams paralelos
+Uso de streams paralelos
 
 ---
 
 ## Proyecto 9
 Varios ejemplos
+
+---
+
+## Proyecto 10
+Colecciones concurrentes
 
 ---
 ### Tecnologías utilizadas 🔧
